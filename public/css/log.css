@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5d4ac;
+    color: #333;
+}
+
+/* Contenitore principale del form */
+.form {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    
+    background-color: 	#fffbf4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+div input{
+   background-color:  #fffffc;
+}
+
+/* Titolo */
+.form h1 {
+    text-align: center;
+    color: #022503;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* campo input */
+.form-div {
+    margin-bottom: 15px;
+    padding-right: 30px;
+}
+
+.form-div label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-div input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+
+.form-button {
+    position:relative;
+    left: 125px;
+    width: 250px;
+    padding: 12px;
+    background-color: #FFD700;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    
+    font-size: 15px;
+    margin-top: 10px;
+}
+  
+
+.form-button:hover {
+    background-color: #FFA500;
+    color: #fff;
+}
+
+/* Link sotto il form */
+.form-redirect {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-redirect a {
+    color: #022503;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Messaggi di errore e success */
+ul {
+    
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .form {
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+
+  .form h1 {
+    font-size: 22px;
+  }
+
+  .form-div {
+    margin-bottom: 12px;
+    padding-right: 20px;
+  }
+  #fot{
+    width: 76px;
+    height: 64px;
+  }
+
+  .form-div input {
+    font-size: 16px;
+  }
+
+  .form-button {
+    position: static;
+    width: 100%;
+    left: auto;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .form-redirect {
+    font-size: 14px;
+  }
+
+#profile_image {
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 5px;
+  width: auto;
+}
+
+#profile_image::file-selector-button {
+ 
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#profile_image::file-selector-button:hover {
+  background-color: #FFA500;
+  color: #fff;
+}
+
+
+  ul {
+    font-size: 13px;
+    padding: 10px;
+  }
+}
+

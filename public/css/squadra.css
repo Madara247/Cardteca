@@ -1,0 +1,90 @@
+.pokemon-card {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 150px;
+}
+
+.pokemon-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-card span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+#selected-team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#search_result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#search {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pokemon-card button {
+  margin-top: 5px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.pokemon-card button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  #selected-team,
+  #search_result {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+  }
+
+  .pokemon-card {
+    width: 90%; 
+    max-width: none; 
+    margin: 10px 0; 
+    padding: 15px; 
+  }
+
+  .pokemon-card img {
+    width: 100%; 
+    height: auto; 
+    max-width: 200px; 
+    margin: 0 auto; 
+    display: block;
+  }
+
+  .pokemon-card span {
+    font-size: 18px; 
+  }
+
+  .pokemon-card button {
+    display: inline-block;
+    width: 100%; 
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+

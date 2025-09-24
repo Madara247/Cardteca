@@ -1,0 +1,343 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/immagini/cielo.jpg");
+    background-color: #333;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #067524;
+    position: relative;
+    top: 52px;
+    left: 0;
+    display: flex;
+    justify-content: space-around; 
+    padding: 10px 0;
+    align-items: center;
+    
+}
+
+nav img {
+    width: 55px;
+    height: 55px;
+}
+
+#foto {
+    width: 100px;
+    height: 80px;
+}
+
+#fot {
+    width: 66px;
+    height: 54px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    gap: 5px;
+    height: 45px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #ea8a03;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #067524;
+    color: #ffffff;
+    border: none;
+    padding: 25px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+button:hover {
+    background-color: #ea8a03;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#profileImage {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #658903;
+    object-fit: cover;
+}
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: #333;
+    background-image: url("/immagini/rovine.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.card {
+    background: #f5d4ac;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 140px);
+    text-align: center;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.profile {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: rgba(43, 153, 3, 0.8);
+    padding: 10px;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #FFA500;
+}
+
+.footer {
+    background-color: #066003;
+    color: #eee;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+    
+}
+
+.footer a {
+    color: #77ccff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* MODALE NASCOSTO DI BASE */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* MODALE VISIBILE */
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENUTO DEL MODALE */
+.modal-content {
+    background-color: #f5d4ac;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.modal-content img {
+    width: 300px;         
+    height: auto;        
+    max-height: 400px;   
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+     body {
+    background: #333 url("/immagini/rovine.jpg") center/cover no-repeat;
+  }
+ html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+   header {
+    height: auto;
+    padding: 15px 10px;
+    background: url("/immagini/cielo.jpg") center/cover no-repeat;
+    z-index: 10;
+  }
+
+ header h1 {
+    font-family: 'Verdana', sans-serif;  
+    font-size: 22px;                      
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;         
+    line-height: 1.2;
+  }
+
+ nav {
+    position: relative;
+    top:15px;
+    left: auto ;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+   
+    background: #067524;
+    padding-bottom: 340px;
+  }
+
+  nav img {
+    width: 37px;
+    height: auto;
+    margin: 5px 0;
+  }
+  #fot {
+    width: 64px;
+    height: 57px;
+  }
+
+  nav a {
+    color: #fff;             
+    font-size: 16px;         
+    
+    text-shadow: 1px 1px 2px #000; 
+  }
+
+  button {
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px #000;
+    margin: 5px 0;
+  }
+
+  #profileImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  .container {
+    position: static;
+    top: auto;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    background: transparent;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .footer {
+    font-size: 1em;
+    padding: 15px 10px;
+    margin: 0;
+  }
+
+  .modal-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #close-modal {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
